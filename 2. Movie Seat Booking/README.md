@@ -9,7 +9,8 @@ Simple client side movies seat booking application. Pick your seats and Movies, 
 # Project Explanation
 - Link (Will Update Soon)
 
-# Project Specifications- Display UI with movie select, screen, seats, legend & seat info
+# Project Specifications 
+- Display UI with movie select, screen, seats, legend & seat info
 - User can select a movie/price
 - User can select/deselect seats
 - User can not select occupied seats
