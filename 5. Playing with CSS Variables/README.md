@@ -1,5 +1,5 @@
 # Playing with CSS Variables Project
-Playing with CSS Variables using JavaScript, in this project user we can update the border size of an image, select border color and play with blur filter.
+Playing with CSS Variables using JavaScript, in this project user can update the border size of an image, select border color and play with blur filter.
 
 # Inspiration Credit
 - https://javascript30.com/
