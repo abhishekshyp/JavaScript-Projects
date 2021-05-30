@@ -1,4 +1,4 @@
-# Form Validator Projects
+# Movie Seat Booking Projects
 Simple client side movies seat booking application. Pick your seats and Movies, Book tickets and check prices.
 
 # Technologies Used
