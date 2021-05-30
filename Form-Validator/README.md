@@ -26,7 +26,7 @@ Simple client side form validation. Check Username, email and password. Function
 
 # Contact
 - Name: Abhishek Kashyap
-- Email: (Will Update Soon)
+- Email: (Will Update Soon) 
 - Website: (Will Update Soon)
 
 
