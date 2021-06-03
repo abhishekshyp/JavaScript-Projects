@@ -5,7 +5,7 @@ Changing or Playing with custom boxes by dragging them
 - HTML
 - CSS
 - JavaScript
-- 
+
 # Project Specifications 
 - Click and drag the boxes to move them
 
