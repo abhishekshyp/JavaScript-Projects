@@ -10,4 +10,4 @@
 # View Live Project
 
 
-![preview img](/preview.png)
+![preview](https://user-images.githubusercontent.com/71214929/170824123-76bb57b9-ec04-41f7-aadf-e040468d7d17.png)
