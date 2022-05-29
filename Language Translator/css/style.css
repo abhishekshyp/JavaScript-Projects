@@ -120,3 +120,21 @@ li,
     font-weight: 600;
     border-radius: 5px;
 }
+@media screen and (max-width: 600px) {
+    .wrapper .text-input {
+        flex-direction: column;
+    }
+    .text-input .to-text {
+        border-left: 0;
+        border-top: 1px solid #bbb;
+    }
+    .controls {
+        flex-direction: column;
+    }
+    .controls .row.from {
+        margin-bottom: 1rem;
+    }
+    .controls .row.to {
+        margin-top: 1rem;
+    }
+}
