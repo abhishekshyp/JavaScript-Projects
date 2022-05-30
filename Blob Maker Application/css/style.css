@@ -1,0 +1,205 @@
+/* Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Root Colors */
+:root {
+    --white: #ffffff;
+    --blue: #4361ee;
+    --purple: #3a0ca3;
+    --black: #111111;
+}
+
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    font-weight: 400;
+    color: var(--black);
+}
+body {
+    background-color: var(--purple);
+}
+
+/* Scrollbar */
+
+/*
+ *  STYLE 6
+ */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: var(--purple);
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--purple);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);	
+    background-image: -webkit-linear-gradient(45deg,
+                        rgba(255, 255, 255, .2) 25%,
+                        transparent 25%,
+                        transparent 50%,
+                        rgba(255, 255, 255, .2) 50%,
+                        rgba(255, 255, 255, .2) 75%,
+                        transparent 75%,
+                        transparent)
+}
+
+/* Main Content Styling */
+.wrapper {
+    width: 45%;
+    min-width: 550px;
+    height: auto;
+    padding: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+/* Blob Output */
+.wrapper .output {
+    background-color: #c6d0ff;
+    width: 100%;
+    min-height: 250px;
+    padding: 50px 0;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.wrapper .output #blob {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(var(--purple), var(--blue));
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, .15);
+}
+
+/* Dimensions - Height and Weight */
+.wrapper .dimensions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 40px 0;
+}
+.wrapper .dimensions label {
+    font-weight: 600;
+}
+.wrapper .dimensions input[type="number"] {
+    font-weight: 500;
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #c6d0ff;
+    border-radius: 3px;
+    color: var(--black);
+    transition: all .25s ease;
+}
+.wrapper .dimensions input[type="number"]:focus {
+    background-color: #edf1ff;
+    border-color: var(--purple);
+    transition: all .25s ease;
+}
+
+/* Slider */
+.wrapper .sliders {
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* CSS Code */
+.wrapper input[type="text"] {
+    width: 82%;
+    margin-top: 45px;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    background-color: #c6d0ff;
+    border-radius: 3px;
+}
+.wrapper button {
+    width: 15%;
+    margin-left: 1%;
+    padding: 9px 0;
+    color: var(--white);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--purple);
+    transition: all .4s ease;
+    font-weight: 600;
+}
+.wrapper button:hover {
+    background-color: var(--blue);
+    transition: all .4s ease;
+}
+
+/* Media Queries */
+@media screen and (max-width: 551px) {
+    .wrapper {
+        min-width: 500px;
+    }
+    .wrapper .output {
+        min-height: 200px;
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width: 490px) {
+    .wrapper {
+        min-width: 400px;
+    }
+    .wrapper .output #blob {
+        height: 200px;
+        width: 200px;
+    }
+    .wrapper input[type="text"] {
+        width: 100%;
+    }
+    .wrapper button {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .wrapper {
+        min-width: 350px;
+    }
+    .wrapper .dimensions {
+        flex-direction: column;
+    }
+    .wrapper .dimensions input[type="number"] {
+        margin: 10px;
+        width: 60%;
+    }
+    .wrapper .dimensions .width input[type="number"] {
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .wrapper {
+        min-width: 300px;
+    }
+    .wrapper .output #blob {
+        height: 150px;
+        width: 150px;
+    }
+    .wrapper .sliders {
+        width: 100%;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+    }
+}
